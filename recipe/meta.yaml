@@ -1,5 +1,5 @@
 {% set name = "pyglotaran-extras" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyglotaran_extras-{{ version }}.tar.gz
-  sha256: d9c22c6700ae974f29986ff803216fc8f7eb1871ae11b84197017d3608a6c76d
+  sha256: 114b5a818f12ce3db53d4dcd6cfc15fb1770acc84cded88105a0ae68050ec63f
 
 build:
   noarch: python
