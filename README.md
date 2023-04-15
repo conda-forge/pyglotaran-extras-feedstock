@@ -1,11 +1,11 @@
-About pyglotaran-extras
-=======================
+About pyglotaran-extras-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglotaran-extras-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/glotaran/pyglotaran-extras
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglotaran-extras-feedstock/blob/main/LICENSE.txt)
 
 Summary: Supplementary package for pyglotaran with (example) plotting code.
 
