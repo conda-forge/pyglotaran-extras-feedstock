@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - pip
+    - hatchling
     - python >=3.10
   run:
     - cycler >=0.10
