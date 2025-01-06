@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pyglotaran-extras" %}
 {% set version = "0.7.3" %}
 
@@ -6,19 +7,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyglotaran_extras-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyglotaran_extras-{{ version }}.tar.gz
   sha256: 37b3f3ba1197c3a5297737f4b543a544b2135193a1c816bc9b9db76cd218d0c9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - hatchling
-    - python >=3.10
+    - python {{ python_min }}
   run:
     - cycler >=0.10
     - docstring_parser >=0.16
@@ -27,7 +28,7 @@ requirements:
     - pydantic >=2.7
     - pyglotaran >=0.7.0
     - ruamel.yaml >=0.18.6
-    - python >=3.10
+    - python >={{ python_min }}
     - tabulate >=0.8.9
     - xarray >=2022.3.0
 
@@ -38,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/glotaran/pyglotaran-extras
