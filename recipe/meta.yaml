@@ -1,14 +1,14 @@
 {% set python_min = "3.10" %}
 {% set name = "pyglotaran-extras" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyglotaran_extras-{{ version }}.tar.gz
-  sha256: 3da48ac3251aebed82e66d3bd162cbd3fce40d6763e1d38c3ffe9766456d4523
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyglotaran_extras-{{ version }}.tar.gz
+  sha256: 0c6c6ed646d06d07cc7e6d91c9084834039a7349ac6842e08ab1281960b75393
 
 build:
   noarch: python
